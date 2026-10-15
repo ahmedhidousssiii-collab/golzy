@@ -1,0 +1,16 @@
+:root { --ground:#0d0f14; --surface:#171a21; --text:#eef1f5; --muted:#a3acbb; --line:#262b35; --accent:#2ed973; color-scheme: dark; }
+@media (prefers-color-scheme: light) { :root { --ground:#f2f3f6; --surface:#fff; --text:#12151b; --muted:#566070; --line:#dfe3ea; --accent:#16a34a; color-scheme: light; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--ground); color:var(--text); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; }
+main { max-width:680px; margin:0 auto; padding:40px 18px 64px; }
+.brand { display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+.mark { width:44px; height:44px; border-radius:11px; background:#0b2a1a; display:grid; place-items:center; font-size:24px; }
+.brand span { font-weight:700; color:var(--muted); }
+h1 { font-size:clamp(30px,6vw,40px); line-height:1.1; margin:0 0 6px; }
+h2 { font-size:20px; margin:30px 0 8px; }
+.date { color:var(--muted); font-size:14px; margin:0 0 26px; }
+.summary { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin-bottom:30px; }
+.summary h2 { margin-top:0; }
+.summary ul { margin:0; padding-left:20px; }
+a { color:var(--accent); }
+nav { margin-top:36px; padding-top:18px; border-top:1px solid var(--line); display:flex; gap:18px; flex-wrap:wrap; font-size:15px; }
